@@ -40,7 +40,7 @@ class _MyHomePageState extends State<Login> {
     final loginButon = Material(
       elevation: 5.0,
       borderRadius: BorderRadius.circular(30.0),
-      color: Color(0xff01A0C7),
+      color: Colors.orange,
       child: MaterialButton(
         minWidth: MediaQuery.of(context).size.width,
         padding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
@@ -50,7 +50,7 @@ class _MyHomePageState extends State<Login> {
               MaterialPageRoute(builder: (context) => Overview()),
             );
         },
-        child: Text("Login",
+        child: Text("LOGON",
             textAlign: TextAlign.center,
             style: style.copyWith(
                 color: Colors.white, fontWeight: FontWeight.bold)),
@@ -61,7 +61,7 @@ class _MyHomePageState extends State<Login> {
       body: SingleChildScrollView(
       child: Center(
         child: Container(
-          color: Colors.white,
+          color: Colors.blueGrey,
           child: Padding(
             padding: const EdgeInsets.all(36.0),
             child: Column(

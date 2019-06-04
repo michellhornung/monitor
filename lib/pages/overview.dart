@@ -2,22 +2,37 @@ import 'package:flutter/material.dart';
 import 'package:monitor/pages/drilldown.dart';
 
 class Overview extends StatelessWidget {
+  final List<String> _listViewData = [
+    "LH TEC",
+    "DKVOX",
+    "RESLUT",
+    "XYZ",
+    "AIRBOT",
+    "IT4U",
+    "HAMMERCODE",
+    "DRIVEN"
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text('Overview'),
       ),
-      body: Center(
-        child: RaisedButton(
-          child: Text('Go to drill down!'),
-          onPressed: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => DrillDown()),
-          );
-        }
-        ),
+      body: GridView.count(
+        crossAxisCount: 3,
+        padding: EdgeInsets.all(8.0),
+        crossAxisSpacing: 8.0,
+        mainAxisSpacing: 5.0,
+        children: _listViewData
+            .map((data) => Card(
+                  child: Center(
+                      child: Padding(
+                    padding: const EdgeInsets.all(15.0),
+                    child: Text(data),
+                  )),
+                ))
+            .toList(),
       ),
     );
   }
