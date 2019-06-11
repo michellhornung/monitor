@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:monitor/pages/drilldown.dart';
+import 'package:monitor/components/drawer.dart';
 
 class Overview extends StatelessWidget {
   final List<String> _listViewData = [
@@ -16,6 +17,7 @@ class Overview extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: MyDrawer(),
       appBar: AppBar(
         title: Text('Overview'),
       ),
