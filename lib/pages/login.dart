@@ -27,7 +27,7 @@ class _LoginState extends State<Login> {
       autofocus: true,
       initialValue: 'michell@lh.com.br',
       style: TextStyle(
-        color: Colors.white,
+        color: Colors.grey,
       ),
       decoration: InputDecoration(
         hintText: 'Email',
@@ -42,7 +42,7 @@ class _LoginState extends State<Login> {
       autofocus: false,
       initialValue: 'Password',
       style: TextStyle(
-        color: Colors.white,
+        color: Colors.grey,
       ),
       obscureText: true,
       decoration: InputDecoration(
@@ -79,7 +79,7 @@ class _LoginState extends State<Login> {
     );
 
     return Scaffold(
-      backgroundColor: Colors.blueGrey[800],
+      backgroundColor: Colors.white,
       body: Center(
         child: ListView(
           shrinkWrap: true,
