@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:monitor/pages/overview.dart';
-import 'package:monitor/pages/drilldown.dart';
 
 class Login extends StatefulWidget {
   Login({Key key, this.title}) : super(key: key);
@@ -8,90 +7,95 @@ class Login extends StatefulWidget {
   final String title;
 
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _LoginState createState() => new _LoginState();
 }
 
-class _MyHomePageState extends State<Login> {
-  TextStyle style = TextStyle(fontFamily: 'Montserrat', fontSize: 20.0);
-
+class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
-  
-    final emailField = TextField(
-      obscureText: true,
-      style: style,
-      decoration: InputDecoration(
-          contentPadding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
-          hintText: "Email",
-          border:
-              OutlineInputBorder(borderRadius: BorderRadius.circular(32.0))),
-    );
-
-    final passwordField = TextField(
-      obscureText: true,
-      style: style,
-      decoration: InputDecoration(
-          contentPadding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
-          hintText: "Password",
-          border:
-              OutlineInputBorder(borderRadius: BorderRadius.circular(32.0))),
-    );
-
-    final loginButon = Material(
-      elevation: 5.0,
-      borderRadius: BorderRadius.circular(30.0),
-      color: Colors.orange,
-      child: MaterialButton(
-        minWidth: MediaQuery.of(context).size.width,
-        padding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
-        onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => Overview()),
-            );
-        },
-        child: Text("LOGON",
-            textAlign: TextAlign.center,
-            style: style.copyWith(
-                color: Colors.white, fontWeight: FontWeight.bold)),
+    final logo = Hero(
+      tag: 'hero',
+      child: CircleAvatar(
+        backgroundColor: Colors.transparent,
+        radius: 48.0,
+        child: Image.asset('images/logo-lh.png'),
       ),
+    );
+
+    final email = TextFormField(
+      keyboardType: TextInputType.emailAddress,
+      autofocus: true,
+      initialValue: 'michell@lh.com.br',
+      style: TextStyle(
+        color: Colors.white,
+      ),
+      decoration: InputDecoration(
+        hintText: 'Email',
+        contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(32.0),
+        ),
+      ),
+    );
+
+    final password = TextFormField(
+      autofocus: false,
+      initialValue: 'Password',
+      style: TextStyle(
+        color: Colors.white,
+      ),
+      obscureText: true,
+      decoration: InputDecoration(
+        hintText: 'Password',
+        contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
+        border: OutlineInputBorder(borderRadius: BorderRadius.circular(32.0)),
+      ),
+    );
+
+    final loginButton = Padding(
+      padding: EdgeInsets.symmetric(vertical: 16.0),
+      child: RaisedButton(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(24),
+        ),
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => Overview()),
+          );
+        },
+        padding: EdgeInsets.all(12),
+        color: Colors.orange[800],
+        child: Text('LOGON', style: TextStyle(color: Colors.white)),
+      ),
+    );
+
+    final forgotLabel = FlatButton(
+      child: Text(
+        'Esqueceu a senha?',
+        style: TextStyle(color: Colors.grey),
+      ),
+      onPressed: () {},
     );
 
     return Scaffold(
-      body: SingleChildScrollView(
-      child: Center(
-        child: Container(
-          color: Colors.blueGrey,
-          child: Padding(
-            padding: const EdgeInsets.all(36.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                SizedBox(
-                  height: 155.0,
-                  // child: Image.asset(
-                  //   "/assets/logo.png",
-                  //   fit: BoxFit.contain,
-                  // ),
-                ),
-                SizedBox(height: 45.0),
-                emailField,
-                SizedBox(height: 25.0),
-                passwordField,
-                SizedBox(
-                  height: 35.0,
-                ),
-                loginButon,
-                SizedBox(
-                  height: 15.0,
-                ),
-              ],
-            ),
-          ),
+      backgroundColor: Colors.blueGrey[800],
+      body: Center(
+        child: ListView(
+          shrinkWrap: true,
+          padding: EdgeInsets.only(left: 24.0, right: 24.0),
+          children: <Widget>[
+            logo,
+            SizedBox(height: 48.0),
+            email,
+            SizedBox(height: 8.0),
+            password,
+            SizedBox(height: 24.0),
+            loginButton,
+            forgotLabel
+          ],
         ),
       ),
-        )
     );
   }
 }

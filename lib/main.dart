@@ -11,9 +11,9 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.orange,
+        hintColor: Colors.white,
       ),
       home: Login(title: 'LH ALIVE MONITOR'),
     );
   }
 }
-
