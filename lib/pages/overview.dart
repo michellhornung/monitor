@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:monitor/pages/drilldown.dart';
 import 'package:monitor/pages/login.dart';
+import 'package:monitor/pages/dataTable.dart';
 
 class Overview extends StatefulWidget {
   @override
@@ -61,7 +62,7 @@ class _OverviewState extends State<Overview> {
               onTap: () {
                 Navigator.of(context).pop();
                 Navigator.of(context).push(MaterialPageRoute(
-                    builder: (BuildContext context) => Overview()));
+                    builder: (BuildContext context) => DataTableDemo()));
               },
             ),
             ListTile(
