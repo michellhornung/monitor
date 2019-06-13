@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:monitor/pages/servicos.dart';
+import 'package:monitor/pages/services.dart';
 import 'package:monitor/pages/so.dart';
 import 'package:monitor/pages/oracle.dart';
-import 'package:monitor/pages/alarmes.dart';
+import 'package:monitor/pages/alarms.dart';
 
 class DrillDown extends StatelessWidget {
   @override
@@ -34,7 +34,7 @@ class BodyWidget extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => Servicos()),
+                MaterialPageRoute(builder: (context) => Services()),
               );
             },
           ),
@@ -88,7 +88,7 @@ class BodyWidget extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => Alarmes()),
+                MaterialPageRoute(builder: (context) => Alarms()),
               );
             },
           ),

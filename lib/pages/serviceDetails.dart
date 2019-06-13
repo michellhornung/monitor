@@ -1,11 +1,12 @@
+import 'package:monitor/widgets/dataTableWidget.dart';
 import 'package:flutter/material.dart';
 
-class DetalhesServicos extends StatefulWidget {
+class ServiceDetails extends StatefulWidget {
   @override
-  _DetalhesServicosState createState() => new _DetalhesServicosState();
+  _ServiceDetailsState createState() => new _ServiceDetailsState();
 }
 
-class _DetalhesServicosState extends State<DetalhesServicos> {
+class _ServiceDetailsState extends State<ServiceDetails> {
   Widget appBarTitle = new Text(
     "Detalhes Serviços",
     style: new TextStyle(color: Colors.black),
@@ -21,7 +22,7 @@ class _DetalhesServicosState extends State<DetalhesServicos> {
   String _searchText = "";
   List searchresult = new List();
 
-  _DetalhesServicosState() {
+  _ServiceDetailsState() {
     _controller.addListener(() {
       if (_controller.text.isEmpty) {
         setState(() {
@@ -84,24 +85,8 @@ class _DetalhesServicosState extends State<DetalhesServicos> {
                                 Divider(color: Colors.black, indent: 8.8),
                                 AnimatedContainer(
                                   child: Padding(
-                                    padding: const EdgeInsets.all(16.0),
-                                    child: Table(
-                                      border: TableBorder.all(),
-                                      children: [
-                                        TableRow(
-                                          children: [
-                                            Text('01'),
-                                            Text('02'),
-                                          ],
-                                        ),
-                                        TableRow(
-                                          children: [
-                                            Text('03'),
-                                            Text('04'),
-                                          ],
-                                        ),
-                                      ],
-                                    ),
+                                    padding: const EdgeInsets.all(16.8),
+                                    child: DataTableWidget(),
                                   ),
                                   curve: Curves.easeInOut,
                                   duration: const Duration(milliseconds: 500),
@@ -127,28 +112,8 @@ class _DetalhesServicosState extends State<DetalhesServicos> {
                                 Divider(color: Colors.black, indent: 8.8),
                                 AnimatedContainer(
                                   child: Padding(
-                                    padding: const EdgeInsets.all(16.0),
-                                    child: Column(
-                                      children: <Widget>[
-                                        Table(
-                                          border: TableBorder.all(),
-                                          children: [
-                                            TableRow(
-                                              children: [
-                                                Text('01'),
-                                                Text('02'),
-                                              ],
-                                            ),
-                                            TableRow(
-                                              children: [
-                                                Text('03'),
-                                                Text('04'),
-                                              ],
-                                            ),
-                                          ],
-                                        ),
-                                      ],
-                                    ),
+                                    padding: const EdgeInsets.all(16.8),
+                                    child: DataTableWidget(),
                                   ),
                                   curve: Curves.easeInOut,
                                   duration: const Duration(milliseconds: 500),

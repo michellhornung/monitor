@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:monitor/pages/drilldown.dart';
 import 'package:monitor/pages/login.dart';
-import 'package:monitor/pages/dataTable.dart';
+import 'package:monitor/pages/dataTableDemo.dart';
 
 class Overview extends StatefulWidget {
   @override

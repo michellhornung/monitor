@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:monitor/pages/detalhesServicos.dart';
+import 'package:monitor/pages/serviceDetails.dart';
 
-class Servicos extends StatelessWidget {
+class Services extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,7 +28,7 @@ class BodyWidget extends StatelessWidget {
           onTap: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => DetalhesServicos()),
+              MaterialPageRoute(builder: (context) => ServiceDetails()),
             );
           },
         ),
@@ -42,7 +42,7 @@ class BodyWidget extends StatelessWidget {
           onTap: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => DetalhesServicos()),
+              MaterialPageRoute(builder: (context) => ServiceDetails()),
             );
           },
         ),
@@ -56,7 +56,7 @@ class BodyWidget extends StatelessWidget {
           onTap: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => DetalhesServicos()),
+              MaterialPageRoute(builder: (context) => ServiceDetails()),
             );
           },
         ),
@@ -70,7 +70,7 @@ class BodyWidget extends StatelessWidget {
           onTap: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => DetalhesServicos()),
+              MaterialPageRoute(builder: (context) => ServiceDetails()),
             );
           },
         ),
@@ -84,7 +84,7 @@ class BodyWidget extends StatelessWidget {
           onTap: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => DetalhesServicos()),
+              MaterialPageRoute(builder: (context) => ServiceDetails()),
             );
           },
         ),
@@ -98,7 +98,7 @@ class BodyWidget extends StatelessWidget {
           onTap: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => DetalhesServicos()),
+              MaterialPageRoute(builder: (context) => ServiceDetails()),
             );
           },
         ),
@@ -112,7 +112,7 @@ class BodyWidget extends StatelessWidget {
           onTap: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => DetalhesServicos()),
+              MaterialPageRoute(builder: (context) => ServiceDetails()),
             );
           },
         ),
@@ -126,7 +126,7 @@ class BodyWidget extends StatelessWidget {
           onTap: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => DetalhesServicos()),
+              MaterialPageRoute(builder: (context) => ServiceDetails()),
             );
           },
         ),
@@ -140,7 +140,7 @@ class BodyWidget extends StatelessWidget {
           onTap: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => DetalhesServicos()),
+              MaterialPageRoute(builder: (context) => ServiceDetails()),
             );
           },
         ),
@@ -154,7 +154,7 @@ class BodyWidget extends StatelessWidget {
           onTap: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => DetalhesServicos()),
+              MaterialPageRoute(builder: (context) => ServiceDetails()),
             );
           },
         ),
@@ -168,7 +168,7 @@ class BodyWidget extends StatelessWidget {
           onTap: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => DetalhesServicos()),
+              MaterialPageRoute(builder: (context) => ServiceDetails()),
             );
           },
         ),
@@ -182,7 +182,7 @@ class BodyWidget extends StatelessWidget {
           onTap: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => DetalhesServicos()),
+              MaterialPageRoute(builder: (context) => ServiceDetails()),
             );
           },
         ),
@@ -196,7 +196,7 @@ class BodyWidget extends StatelessWidget {
           onTap: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => DetalhesServicos()),
+              MaterialPageRoute(builder: (context) => ServiceDetails()),
             );
           },
         ),
@@ -210,7 +210,7 @@ class BodyWidget extends StatelessWidget {
           onTap: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => DetalhesServicos()),
+              MaterialPageRoute(builder: (context) => ServiceDetails()),
             );
           },
         ),
@@ -224,7 +224,7 @@ class BodyWidget extends StatelessWidget {
           onTap: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => DetalhesServicos()),
+              MaterialPageRoute(builder: (context) => ServiceDetails()),
             );
           },
         ),
@@ -238,7 +238,7 @@ class BodyWidget extends StatelessWidget {
           onTap: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => DetalhesServicos()),
+              MaterialPageRoute(builder: (context) => ServiceDetails()),
             );
           },
         ),
