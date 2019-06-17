@@ -29,7 +29,7 @@ class BodyWidget extends StatelessWidget {
               color: Colors.red,
             ),
             title: Text('Serviços'),
-            subtitle: Text('Clique para verficar'),
+            subtitle: Text('Erros encontrados em serviços.'),
             trailing: Icon(Icons.keyboard_arrow_right),
             onTap: () {
               Navigator.push(
@@ -47,7 +47,7 @@ class BodyWidget extends StatelessWidget {
               color: Colors.yellow,
             ),
             title: Text('Sistema Operacional'),
-            subtitle: Text('Clique para verficar'),
+            subtitle: Text('Warnings encontrados em SO.'),
             trailing: Icon(Icons.keyboard_arrow_right),
             onTap: () {
               Navigator.push(
@@ -65,7 +65,7 @@ class BodyWidget extends StatelessWidget {
               color: Colors.green,
             ),
             title: Text('Oracle'),
-            subtitle: Text('Clique para verficar'),
+            subtitle: Text('Tudo certo por aqui!'),
             trailing: Icon(Icons.keyboard_arrow_right),
             onTap: () {
               Navigator.push(
@@ -83,7 +83,7 @@ class BodyWidget extends StatelessWidget {
               color: Colors.green,
             ),
             title: Text('Alarmes'),
-            subtitle: Text('Clique para verficar'),
+            subtitle: Text('Tudo certo por aqui!'),
             trailing: Icon(Icons.keyboard_arrow_right),
             onTap: () {
               Navigator.push(
