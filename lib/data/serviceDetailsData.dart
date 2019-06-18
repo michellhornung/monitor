@@ -13,7 +13,7 @@ final List<String> serviceDetailsColumns = [
 
 final List<ServiceDetails> servicesDetails = [
   ServiceDetails(
-    uid: 'root',
+    uid: 'root1',
     pid: '3406',
     ppid: '1',
     c: '0',
@@ -23,7 +23,7 @@ final List<ServiceDetails> servicesDetails = [
     cmd: 'lh.aliveserver.IvrService',
   ),
   ServiceDetails(
-    uid: 'root',
+    uid: 'root2',
     pid: '0007',
     ppid: '1',
     c: '0',
@@ -33,7 +33,7 @@ final List<ServiceDetails> servicesDetails = [
     cmd: 'lh.aliveserver.IvrService',
   ),
   ServiceDetails(
-    uid: 'root',
+    uid: 'root3',
     pid: '1000',
     ppid: '1',
     c: '0',

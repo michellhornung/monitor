@@ -29,16 +29,6 @@ class DataTableWidgetState extends State<DataTableWidget> {
         child: ListView(
           children: <Widget>[
             buildDataTable(),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                RaisedButton(
-                  child:
-                      Text('Proccess with ${selectedServices.length} entries'),
-                  onPressed: onPressed(),
-                ),
-              ],
-            )
           ],
         ),
       ),
@@ -59,7 +49,6 @@ class DataTableWidgetState extends State<DataTableWidget> {
             .toList(),
         rows: servicesDetails
             .map((ServiceDetails servicesDetails) => DataRow(
-                  selected: selectedServices.contains(servicesDetails),
                   cells: [
                     DataCell(Text('${servicesDetails.uid}')),
                     DataCell(Text('${servicesDetails.pid}')),
@@ -70,8 +59,6 @@ class DataTableWidgetState extends State<DataTableWidget> {
                     DataCell(Text('${servicesDetails.time}')),
                     DataCell(Text('${servicesDetails.cmd}')),
                   ],
-                  onSelectChanged: (bool selected) => onSelectedRowChanged(
-                      selected: selected, servicesDetails: servicesDetails),
                 ))
             .toList(),
       );

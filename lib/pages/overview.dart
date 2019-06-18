@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:monitor/pages/drilldown.dart';
 import 'package:monitor/pages/login.dart';
 import 'package:monitor/pages/dataTableDemo.dart';
+import 'package:monitor/widgets/dataTableWidget2.dart';
 
 class Overview extends StatefulWidget {
   @override
@@ -66,13 +67,13 @@ class _OverviewState extends State<Overview> {
               },
             ),
             ListTile(
-              title: Text("Tests"),
+              title: Text("Tests - deletar"),
               trailing: Icon(Icons.arrow_right),
-//              onTap: () {
-//                Navigator.of(context).pop();
-//                Navigator.of(context).push(MaterialPageRoute(
-//                    builder: (BuildContext context) => Services2()));
-//              },
+              onTap: () {
+                Navigator.of(context).pop();
+                Navigator.of(context).push(MaterialPageRoute(
+                    builder: (BuildContext context) => DataTableWidget2()));
+              },
             ),
             ListTile(
               title: Text("LOGOUT"),

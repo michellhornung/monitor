@@ -8,7 +8,7 @@ class Services extends StatefulWidget {
 
 class _ServicesState extends State<Services> {
   Widget appBarTitle = new Text(
-    "Detalhes Serviços",
+    "Serviços",
     style: new TextStyle(color: Colors.black),
   );
   Icon icon = new Icon(
@@ -92,6 +92,13 @@ class _ServicesState extends State<Services> {
                               ),
                               title: new Text(listData.toString()),
                               trailing: Icon(Icons.keyboard_arrow_right),
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => ServiceDetails()),
+                                );
+                              },
 //                              children: <Widget>[
 //                                Divider(color: Colors.black, indent: 8.8),
 //                                AnimatedContainer(
