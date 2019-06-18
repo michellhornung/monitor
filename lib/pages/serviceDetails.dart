@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:monitor/pages/drilldown.dart';
-import 'package:monitor/pages/login.dart';
-import 'package:monitor/pages/dataTableDemo.dart';
-import 'package:monitor/widgets/dataTableWidget.dart';
+import 'package:monitor/widgets/dataTableServiceDetails.dart';
 
 class ServiceDetails extends StatefulWidget {
   @override
@@ -24,27 +21,41 @@ class _ServiceDetailsState extends State<ServiceDetails> {
                 padding: EdgeInsets.all(10.0),
                 child: Center(
                   child: GridTile(
-                    footer: Text(
-                      'alive $index',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 18.0,
-                        letterSpacing: 1.0,
-                        color: Colors.black,
-                        backgroundColor: Colors.orange,
+//                    footer: Container(
+//                      decoration: BoxDecoration(
+//                        color: Colors.grey,
+//                        borderRadius: BorderRadius.circular(5.0),
+//                      ),
+//                      child: Text(
+//                        'alive $index',
+//                        textAlign: TextAlign.center,
+//                        style: TextStyle(
+//                          fontSize: 16.0,
+//                          letterSpacing: 0.5,
+//                          color: Colors.black,
+//                        ),
+//                      ),
+//                    ),
+                    header: Container(
+                      margin: EdgeInsets.symmetric(
+                        vertical: 0.1,
+                        horizontal: 90.0,
+                      ),
+                      decoration: BoxDecoration(
+                        color: Colors.grey,
+                        borderRadius: BorderRadius.circular(10.0),
+                      ),
+                      child: Text(
+                        'alive $index',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 16.0,
+                          letterSpacing: 0.5,
+                          color: Colors.black,
+                        ),
                       ),
                     ),
-                    header: Text(
-                      'alive $index',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 18.0,
-                        letterSpacing: 1.0,
-                        color: Colors.black,
-                        backgroundColor: Colors.orange,
-                      ),
-                    ),
-                    child: DataTableWidget(),
+                    child: DataTableServiceDetails(),
                   ),
                 ),
                 color: Colors.grey[300],

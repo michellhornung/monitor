@@ -2,12 +2,12 @@ import 'package:monitor/data/serviceDetailsData.dart';
 import 'package:monitor/model/serviceDetailsModel.dart';
 import 'package:flutter/material.dart';
 
-class DataTableWidget extends StatefulWidget {
+class DataTableServiceDetails extends StatefulWidget {
   @override
-  DataTableWidgetState createState() => DataTableWidgetState();
+  DataTableServiceDetailsState createState() => DataTableServiceDetailsState();
 }
 
-class DataTableWidgetState extends State<DataTableWidget> {
+class DataTableServiceDetailsState extends State<DataTableServiceDetails> {
   bool ascending;
   List<ServiceDetails> selectedServices;
 
