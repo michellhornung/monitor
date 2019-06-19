@@ -9,7 +9,7 @@ class DrillDown extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Drill Down'),
+        title: Text('DRILL DOWN'),
       ),
       body: BodyWidget(),
     );

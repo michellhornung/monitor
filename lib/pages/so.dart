@@ -8,7 +8,7 @@ class SO extends StatefulWidget {
 
 class _SOState extends State<SO> {
   Widget appBarTitle = new Text(
-    "Sistema Operacional",
+    "SISTEMA OPERACIONAL",
     style: new TextStyle(color: Colors.black),
   );
   Icon icon = new Icon(

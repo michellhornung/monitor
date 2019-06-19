@@ -8,7 +8,7 @@ class Services extends StatefulWidget {
 
 class _ServicesState extends State<Services> {
   Widget appBarTitle = new Text(
-    "Serviços",
+    "SERVIÇOS",
     style: new TextStyle(color: Colors.black),
   );
   Icon icon = new Icon(

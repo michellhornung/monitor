@@ -10,7 +10,7 @@ class _AlarmsState extends State<Alarms> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Alarmes'),
+        title: Text('ALARMES'),
       ),
     );
   }

@@ -11,7 +11,7 @@ class _ServiceDetailsState extends State<ServiceDetails> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Detalhes Serviços'),
+        title: Text('DETALHES SERVIÇOS'),
       ),
       body: Container(
         child: GridView.count(

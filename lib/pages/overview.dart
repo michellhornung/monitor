@@ -88,7 +88,7 @@ class _OverviewState extends State<Overview> {
         ),
       ),
       appBar: AppBar(
-        title: Text('Overview'),
+        title: Text('OVERVIEW'),
       ),
       body: GestureDetector(
         onTap: () {
