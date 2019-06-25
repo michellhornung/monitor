@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:monitor/pages/alarmDrillDownDetails.dart';
 
 class AlarmDetail extends StatelessWidget {
   @override
@@ -17,7 +18,7 @@ class BodyWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(16.0),
         child: Container(
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(40.0),
@@ -28,7 +29,7 @@ class BodyWidget extends StatelessWidget {
                 color: Colors.grey[300],
               )),
           child: Padding(
-            padding: const EdgeInsets.all(16.0),
+            padding: const EdgeInsets.all(8.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               mainAxisAlignment: MainAxisAlignment.center,
@@ -71,7 +72,10 @@ class BodyWidget extends StatelessWidget {
                   elevation: 4.0,
                   splashColor: Colors.blueGrey,
                   onPressed: () {
-                    // Perform some action
+                    Navigator.of(context).pop();
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (BuildContext context) =>
+                            AlarmDrillDownDetails()));
                   },
                 ),
               ],
@@ -79,86 +83,6 @@ class BodyWidget extends StatelessWidget {
           ),
         ),
       ),
-//      child: Padding(
-//        padding: const EdgeInsets.all(16.0),
-//        child: Column(
-//          crossAxisAlignment: CrossAxisAlignment.stretch,
-//          children: <Widget>[
-//            Container(
-//              child: Text('_ ERROR: DSC'),
-//              padding: const EdgeInsets.all(10.0),
-//              decoration: BoxDecoration(
-//                shape: BoxShape.rectangle,
-//                border: Border.all(
-//                  style: BorderStyle.solid,
-//                  width: 1.0,
-//                  color: Colors.black,
-//                ),
-//              ),
-//            ),
-//            Container(
-//              child: Text('__ DSC'),
-//              padding: const EdgeInsets.all(10.0),
-//              decoration: BoxDecoration(
-//                shape: BoxShape.rectangle,
-//                border: Border.all(
-//                  style: BorderStyle.solid,
-//                  width: 1.0,
-//                  color: Colors.black,
-//                ),
-//              ),
-//            ),
-//            Container(
-//              child: Text('__ 29/04/2019 02:13:45'),
-//              padding: const EdgeInsets.all(10.0),
-//              decoration: BoxDecoration(
-//                shape: BoxShape.rectangle,
-//                border: Border.all(
-//                  style: BorderStyle.solid,
-//                  width: 1.0,
-//                  color: Colors.black,
-//                ),
-//              ),
-//            ),
-//            Container(
-//              child: Text('__ ORA-01403: no data found'),
-//              padding: const EdgeInsets.all(10.0),
-//              decoration: BoxDecoration(
-//                shape: BoxShape.rectangle,
-//                border: Border.all(
-//                  style: BorderStyle.solid,
-//                  width: 1.0,
-//                  color: Colors.black,
-//                ),
-//              ),
-//            ),
-//            Container(
-//              child: Text('__ SP_ALIVE_JOB_MANUT_DB at LINE: 1019'),
-//              padding: const EdgeInsets.all(10.0),
-//              decoration: BoxDecoration(
-//                shape: BoxShape.rectangle,
-//                border: Border.all(
-//                  style: BorderStyle.solid,
-//                  width: 1.0,
-//                  color: Colors.black,
-//                ),
-//              ),
-//            ),
-//            Container(
-//              child: Icon(Icons.search),
-//              padding: const EdgeInsets.all(10.0),
-//              decoration: BoxDecoration(
-//                shape: BoxShape.rectangle,
-//                border: Border.all(
-//                  style: BorderStyle.solid,
-//                  width: 1.0,
-//                  color: Colors.black,
-//                ),
-//              ),
-//            ),
-//          ],
-//        ),
-//      ),
     );
   }
 }
