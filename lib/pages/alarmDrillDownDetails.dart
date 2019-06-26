@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:monitor/pages/channelDetail.dart';
 
 class AlarmDrillDownDetails extends StatelessWidget {
   @override
@@ -120,26 +121,19 @@ class BodyWidget extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      mainAxisSize: MainAxisSize.max,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: <Widget>[
-                        Container(
-                          height: 100.0,
-                          child: new ListView.builder(
-                            scrollDirection: Axis.horizontal,
-                            shrinkWrap: true,
-                            physics: const ClampingScrollPhysics(),
-                            itemCount: 10,
-                            // itemExtent: 10.0,
-                            // reverse: true, //makes the list appear in descending order
-                            itemBuilder: (BuildContext context, int index) {
-                              return _buildItems(index, context);
-                            },
-                          ),
-                        ),
-                      ],
+                    Container(
+                      height: 100.0,
+                      child: new ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        shrinkWrap: true,
+                        physics: const ClampingScrollPhysics(),
+                        itemCount: 10,
+                        // itemExtent: 10.0,
+                        // reverse: true, //makes the list appear in descending order
+                        itemBuilder: (BuildContext context, int index) {
+                          return _buildItems(index, context);
+                        },
+                      ),
                     ),
                   ],
                 ),
@@ -153,66 +147,32 @@ class BodyWidget extends StatelessWidget {
 }
 
 Widget _buildItems(int index, BuildContext context) {
-  return new Container(
+  return Container(
     padding: const EdgeInsets.all(10.0),
-    child: new Row(
+    child: Row(
       children: [
-        new Row(children: [
-          RaisedButton(
-            child: Icon(
-              Icons.open_in_new,
+        Row(
+          children: [
+            ButtonTheme(
+              minWidth: 100.0,
+              height: 100.0,
+              child: RaisedButton(
+                child: Icon(
+                  Icons.open_in_new,
+                ),
+                shape: CircleBorder(),
+                color: Theme.of(context).accentColor,
+                elevation: 4.0,
+                onPressed: () {
+                  Navigator.of(context).pop();
+                  Navigator.of(context).push(MaterialPageRoute(
+                      builder: (BuildContext context) => ChannelDetails()));
+                },
+              ),
             ),
-            shape: CircleBorder(),
-            color: Theme.of(context).accentColor,
-            elevation: 4.0,
-            onPressed: () {
-              Navigator.of(context).pop();
-              Navigator.of(context).push(MaterialPageRoute(
-                  builder: (BuildContext context) => AlarmDrillDownDetails()));
-            },
-          ),
-        ])
+          ],
+        ),
       ],
     ),
   );
 }
-
-//return SingleChildScrollView(
-//child: Padding(
-//padding: const EdgeInsets.all(8.0),
-//child: Column(
-//crossAxisAlignment: CrossAxisAlignment.stretch,
-//children: <Widget>[
-//Container(
-//decoration: BoxDecoration(
-//borderRadius: BorderRadius.circular(10.0),
-//shape: BoxShape.rectangle,
-//border: Border.all(
-//style: BorderStyle.solid,
-//width: 1.0,
-//color: Colors.grey[300],
-//),
-//),
-//height: 100.0,
-//child: Text('One'),
-//),
-//SizedBox(
-//height: 10.0,
-//),
-//Container(
-//height: 400.0,
-//color: Colors.red,
-//child: Text('Two'),
-//),
-//SizedBox(
-//height: 10.0,
-//),
-//Container(
-//height: 150.0,
-//color: Colors.green,
-//child: Text('Three'),
-//),
-//],
-//),
-//),
-//);
