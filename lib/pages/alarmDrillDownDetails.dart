@@ -14,6 +14,14 @@ class AlarmDrillDownDetails extends StatelessWidget {
 }
 
 class BodyWidget extends StatelessWidget {
+  final List<String> channelList = [
+    "Todos",
+    "Ativos",
+    "HW01",
+    "HW02",
+    "HW03",
+    "HW04",
+  ];
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -86,7 +94,8 @@ class BodyWidget extends StatelessWidget {
                       'org.hibernate.LazyInitializationException: ' +
                           'failed to lazily initialize a collection of ' +
                           'role: lh.dsc.model.Campanha.devices, could not initialize proxy - no Session ' +
-                          ' at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:567)',
+                          'at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException' +
+                          '(AbstractPersistentCollection.java:567)',
                     ),
                   ],
                 ),
@@ -123,16 +132,33 @@ class BodyWidget extends StatelessWidget {
                     ),
                     Container(
                       height: 100.0,
-                      child: new ListView.builder(
+                      child: ListView(
+                        padding: EdgeInsets.all(10.0),
                         scrollDirection: Axis.horizontal,
-                        shrinkWrap: true,
-                        physics: const ClampingScrollPhysics(),
-                        itemCount: 10,
-                        // itemExtent: 10.0,
-                        // reverse: true, //makes the list appear in descending order
-                        itemBuilder: (BuildContext context, int index) {
-                          return _buildItems(index, context);
-                        },
+                        children: channelList
+                            .map(
+                              (data) => ButtonTheme(
+                                    minWidth: 100.0,
+                                    height: 100.0,
+                                    child: RaisedButton(
+                                      child: Text(
+                                        data,
+                                      ),
+                                      shape: CircleBorder(),
+                                      color: Theme.of(context).accentColor,
+                                      elevation: 4.0,
+                                      onPressed: () {
+                                        Navigator.of(context).pop();
+                                        Navigator.of(context).push(
+                                            MaterialPageRoute(
+                                                builder:
+                                                    (BuildContext context) =>
+                                                        ChannelDetails()));
+                                      },
+                                    ),
+                                  ),
+                            )
+                            .toList(),
                       ),
                     ),
                   ],
@@ -144,35 +170,4 @@ class BodyWidget extends StatelessWidget {
       ),
     );
   }
-}
-
-Widget _buildItems(int index, BuildContext context) {
-  return Container(
-    padding: const EdgeInsets.all(10.0),
-    child: Row(
-      children: [
-        Row(
-          children: [
-            ButtonTheme(
-              minWidth: 100.0,
-              height: 100.0,
-              child: RaisedButton(
-                child: Icon(
-                  Icons.open_in_new,
-                ),
-                shape: CircleBorder(),
-                color: Theme.of(context).accentColor,
-                elevation: 4.0,
-                onPressed: () {
-                  Navigator.of(context).pop();
-                  Navigator.of(context).push(MaterialPageRoute(
-                      builder: (BuildContext context) => ChannelDetails()));
-                },
-              ),
-            ),
-          ],
-        ),
-      ],
-    ),
-  );
 }
