@@ -97,11 +97,7 @@ class BodyWidget extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Row(
-                      children: <Widget>[
-                        Text('ALIVE-DKVOX-01'),
-                      ],
-                    ),
+                    Text('ALIVE-DKVOX-01'),
                     SizedBox(
                       height: 10.0,
                     ),
@@ -115,11 +111,7 @@ class BodyWidget extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Row(
-                      children: <Widget>[
-                        Text('3001'),
-                      ],
-                    ),
+                    Text('3001'),
                     SizedBox(
                       height: 10.0,
                     ),
@@ -133,11 +125,7 @@ class BodyWidget extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Row(
-                      children: <Widget>[
-                        Text('Verancard'),
-                      ],
-                    ),
+                    Text('Verancard'),
                     SizedBox(
                       height: 10.0,
                     ),
@@ -151,11 +139,7 @@ class BodyWidget extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Row(
-                      children: <Widget>[
-                        Text('1146394457'),
-                      ],
-                    ),
+                    Text('1146394457'),
                     SizedBox(
                       height: 10.0,
                     ),
@@ -169,11 +153,7 @@ class BodyWidget extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Row(
-                      children: <Widget>[
-                        Text('1125697678'),
-                      ],
-                    ),
+                    Text('1125697678'),
                     SizedBox(
                       height: 10.0,
                     ),
@@ -187,11 +167,7 @@ class BodyWidget extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Row(
-                      children: <Widget>[
-                        Text('Discando'),
-                      ],
-                    ),
+                    Text('Discando'),
                     SizedBox(
                       height: 10.0,
                     ),
@@ -205,11 +181,7 @@ class BodyWidget extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Row(
-                      children: <Widget>[
-                        Text('12/04/2016 - 16:41:27'),
-                      ],
-                    ),
+                    Text('12/04/2016 - 16:41:27'),
                     SizedBox(
                       height: 10.0,
                     ),
@@ -223,11 +195,7 @@ class BodyWidget extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Row(
-                      children: <Widget>[
-                        Text('002'),
-                      ],
-                    ),
+                    Text('002'),
                     SizedBox(
                       height: 10.0,
                     ),
@@ -241,11 +209,7 @@ class BodyWidget extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Row(
-                      children: <Widget>[
-                        Text('10742'),
-                      ],
-                    ),
+                    Text('10742'),
                     SizedBox(
                       height: 10.0,
                     ),
@@ -259,11 +223,7 @@ class BodyWidget extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Row(
-                      children: <Widget>[
-                        Text('10742'),
-                      ],
-                    ),
+                    Text('10742'),
                   ],
                 ),
               ),

@@ -52,7 +52,6 @@ class _OverviewState extends State<Overview> {
               title: Text("Home"),
               trailing: Icon(Icons.home),
               onTap: () {
-                Navigator.of(context).pop();
                 Navigator.of(context).push(MaterialPageRoute(
                     builder: (BuildContext context) => Overview()));
               },
@@ -61,7 +60,6 @@ class _OverviewState extends State<Overview> {
               title: Text("LH Alive Monitor®"),
               trailing: Icon(Icons.arrow_right),
               onTap: () {
-                Navigator.of(context).pop();
                 Navigator.of(context).push(MaterialPageRoute(
                     builder: (BuildContext context) => DataTableDemo()));
               },
@@ -70,7 +68,6 @@ class _OverviewState extends State<Overview> {
               title: Text("Tests - deletar"),
               trailing: Icon(Icons.arrow_right),
               onTap: () {
-                Navigator.of(context).pop();
                 Navigator.of(context).push(MaterialPageRoute(
                     builder: (BuildContext context) => DataTableWidget2()));
               },
@@ -79,7 +76,6 @@ class _OverviewState extends State<Overview> {
               title: Text("LOGOUT"),
               trailing: Icon(Icons.cancel),
               onTap: () {
-                Navigator.of(context).pop();
                 Navigator.of(context).push(MaterialPageRoute(
                     builder: (BuildContext context) => Login()));
               },

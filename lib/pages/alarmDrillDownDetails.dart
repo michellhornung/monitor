@@ -22,8 +22,33 @@ class BodyWidget extends StatelessWidget {
     "HW03",
     "HW04",
   ];
+
   @override
   Widget build(BuildContext context) {
+    var listView = ListView(
+      padding: EdgeInsets.all(10.0),
+      scrollDirection: Axis.horizontal,
+      children: channelList
+          .map(
+            (data) => ButtonTheme(
+                  minWidth: 100.0,
+                  height: 100.0,
+                  child: RaisedButton(
+                    child: Text(
+                      data,
+                    ),
+                    shape: CircleBorder(),
+                    color: Theme.of(context).accentColor,
+                    elevation: 4.0,
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (BuildContext context) => ChannelDetails()));
+                    },
+                  ),
+                ),
+          )
+          .toList(),
+    );
     return SingleChildScrollView(
       child: Padding(
         padding: const EdgeInsets.all(8.0),
@@ -132,34 +157,47 @@ class BodyWidget extends StatelessWidget {
                     ),
                     Container(
                       height: 100.0,
-                      child: ListView(
-                        padding: EdgeInsets.all(10.0),
-                        scrollDirection: Axis.horizontal,
-                        children: channelList
-                            .map(
-                              (data) => ButtonTheme(
-                                    minWidth: 100.0,
-                                    height: 100.0,
-                                    child: RaisedButton(
-                                      child: Text(
-                                        data,
-                                      ),
-                                      shape: CircleBorder(),
-                                      color: Theme.of(context).accentColor,
-                                      elevation: 4.0,
-                                      onPressed: () {
-                                        Navigator.of(context).pop();
-                                        Navigator.of(context).push(
-                                            MaterialPageRoute(
-                                                builder:
-                                                    (BuildContext context) =>
-                                                        ChannelDetails()));
-                                      },
+                      child: ListView.builder(
+                          scrollDirection: Axis.horizontal,
+                          itemCount: channelList.length,
+                          itemBuilder: (context, indice) {
+                            return RaisedButton(
+                              shape: CircleBorder(),
+                              onPressed: () {
+                                Navigator.of(context).push(MaterialPageRoute(
+                                    builder: (BuildContext context) =>
+                                        ChannelDetails()));
+                              },
+                              child: Container(
+                                margin: EdgeInsets.symmetric(horizontal: 2),
+                                width: 100,
+                                height: 100,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: Colors.orangeAccent,
+                                ),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: <Widget>[
+                                    Text(
+                                      channelList[indice],
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.w500),
                                     ),
-                                  ),
-                            )
-                            .toList(),
-                      ),
+                                    Text(
+                                      "Em atendimento: 944",
+                                      style: TextStyle(fontSize: 8),
+                                    ),
+                                    Text(
+                                      "Aguardando: 5046",
+                                      style: TextStyle(fontSize: 8),
+                                    ),
+                                    Icon(Icons.open_in_new)
+                                  ],
+                                ),
+                              ),
+                            );
+                          }),
                     ),
                   ],
                 ),

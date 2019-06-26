@@ -72,7 +72,6 @@ class BodyWidget extends StatelessWidget {
                   elevation: 4.0,
                   splashColor: Colors.blueGrey,
                   onPressed: () {
-                    Navigator.of(context).pop();
                     Navigator.of(context).push(MaterialPageRoute(
                         builder: (BuildContext context) =>
                             AlarmDrillDownDetails()));
