@@ -80,7 +80,7 @@ class BodyWidget extends StatelessWidget {
           child: ListTile(
             leading: Icon(
               Icons.fiber_manual_record,
-              color: Colors.green,
+              color: Colors.red,
             ),
             title: Text('Alarmes'),
             subtitle: Text('Tudo certo por aqui!'),
@@ -93,42 +93,42 @@ class BodyWidget extends StatelessWidget {
             },
           ),
         ),
-        Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: ListTile(
-            leading: Icon(
-              Icons.fiber_manual_record,
-              color: Colors.grey,
-            ),
-            title: Text('Discador'),
-            subtitle: Text('Clique para verficar'),
-            trailing: Icon(Icons.keyboard_arrow_right),
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => DrillDown()),
-              );
-            },
-          ),
-        ),
-        Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: ListTile(
-            leading: Icon(
-              Icons.fiber_manual_record,
-              color: Colors.grey,
-            ),
-            title: Text('Call Center'),
-            subtitle: Text('Clique para verficar'),
-            trailing: Icon(Icons.keyboard_arrow_right),
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => DrillDown()),
-              );
-            },
-          ),
-        ),
+//        Padding(
+//          padding: const EdgeInsets.all(16.0),
+//          child: ListTile(
+//            leading: Icon(
+//              Icons.fiber_manual_record,
+//              color: Colors.grey,
+//            ),
+//            title: Text('Discador'),
+//            subtitle: Text('Clique para verficar'),
+//            trailing: Icon(Icons.keyboard_arrow_right),
+//            onTap: () {
+//              Navigator.push(
+//                context,
+//                MaterialPageRoute(builder: (context) => DrillDown()),
+//              );
+//            },
+//          ),
+//        ),
+//        Padding(
+//          padding: const EdgeInsets.all(16.0),
+//          child: ListTile(
+//            leading: Icon(
+//              Icons.fiber_manual_record,
+//              color: Colors.grey,
+//            ),
+//            title: Text('Call Center'),
+//            subtitle: Text('Clique para verficar'),
+//            trailing: Icon(Icons.keyboard_arrow_right),
+//            onTap: () {
+//              Navigator.push(
+//                context,
+//                MaterialPageRoute(builder: (context) => DrillDown()),
+//              );
+//            },
+//          ),
+//        ),
       ],
     );
   }

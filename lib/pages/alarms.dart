@@ -77,7 +77,7 @@ class _AlarmsState extends State<Alarms> {
                             return new ListTile(
                               leading: Icon(
                                 Icons.error,
-                                color: Colors.grey,
+                                color: Colors.red,
                               ),
                               title: new Text(listData.toString()),
                               trailing: Icon(Icons.keyboard_arrow_right),
@@ -99,7 +99,7 @@ class _AlarmsState extends State<Alarms> {
                             return new ListTile(
                               leading: Icon(
                                 Icons.error,
-                                color: Colors.grey,
+                                color: Colors.red,
                               ),
                               title: new Text(listData.toString()),
                               trailing: Icon(Icons.keyboard_arrow_right),

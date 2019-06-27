@@ -51,10 +51,6 @@ class _OracleState extends State<Oracle> {
                     decoration: new BoxDecoration(
                       color: Colors.grey,
                       shape: BoxShape.circle,
-                      border: Border.all(
-                          style: BorderStyle.solid,
-                          width: 1.0,
-                          color: Colors.black),
                     ),
                   ),
                   Container(
@@ -86,10 +82,6 @@ class _OracleState extends State<Oracle> {
                     decoration: new BoxDecoration(
                       color: Colors.grey,
                       shape: BoxShape.circle,
-                      border: Border.all(
-                          style: BorderStyle.solid,
-                          width: 1.0,
-                          color: Colors.black),
                     ),
                   ),
                 ],
@@ -131,10 +123,6 @@ class _OracleState extends State<Oracle> {
                     decoration: new BoxDecoration(
                       color: Colors.grey,
                       shape: BoxShape.circle,
-                      border: Border.all(
-                          style: BorderStyle.solid,
-                          width: 1.0,
-                          color: Colors.black),
                     ),
                   ),
                   Container(
@@ -166,10 +154,6 @@ class _OracleState extends State<Oracle> {
                     decoration: new BoxDecoration(
                       color: Colors.grey,
                       shape: BoxShape.circle,
-                      border: Border.all(
-                          style: BorderStyle.solid,
-                          width: 1.0,
-                          color: Colors.black),
                     ),
                   ),
                 ],
@@ -211,10 +195,6 @@ class _OracleState extends State<Oracle> {
                     decoration: new BoxDecoration(
                       color: Colors.grey,
                       shape: BoxShape.circle,
-                      border: Border.all(
-                          style: BorderStyle.solid,
-                          width: 1.0,
-                          color: Colors.black),
                     ),
                   ),
                   Container(
@@ -246,10 +226,6 @@ class _OracleState extends State<Oracle> {
                     decoration: new BoxDecoration(
                       color: Colors.grey,
                       shape: BoxShape.circle,
-                      border: Border.all(
-                          style: BorderStyle.solid,
-                          width: 1.0,
-                          color: Colors.black),
                     ),
                   ),
                 ],
@@ -291,10 +267,6 @@ class _OracleState extends State<Oracle> {
                     decoration: new BoxDecoration(
                       color: Colors.grey,
                       shape: BoxShape.circle,
-                      border: Border.all(
-                          style: BorderStyle.solid,
-                          width: 1.0,
-                          color: Colors.black),
                     ),
                   ),
                   Container(
@@ -326,10 +298,6 @@ class _OracleState extends State<Oracle> {
                     decoration: new BoxDecoration(
                       color: Colors.grey,
                       shape: BoxShape.circle,
-                      border: Border.all(
-                          style: BorderStyle.solid,
-                          width: 1.0,
-                          color: Colors.black),
                     ),
                   ),
                 ],
@@ -371,10 +339,6 @@ class _OracleState extends State<Oracle> {
                     decoration: new BoxDecoration(
                       color: Colors.lightBlue[400],
                       shape: BoxShape.rectangle,
-                      border: Border.all(
-                          style: BorderStyle.solid,
-                          width: 1.0,
-                          color: Colors.black),
                     ),
                   ),
                   Container(
@@ -406,10 +370,6 @@ class _OracleState extends State<Oracle> {
                     decoration: new BoxDecoration(
                       color: Colors.blue[800],
                       shape: BoxShape.rectangle,
-                      border: Border.all(
-                          style: BorderStyle.solid,
-                          width: 1.0,
-                          color: Colors.black),
                     ),
                   ),
                 ],

@@ -65,14 +65,6 @@ class _OverviewState extends State<Overview> {
               },
             ),
             ListTile(
-              title: Text("Tests - deletar"),
-              trailing: Icon(Icons.arrow_right),
-              onTap: () {
-                Navigator.of(context).push(MaterialPageRoute(
-                    builder: (BuildContext context) => DataTableWidget2()));
-              },
-            ),
-            ListTile(
               title: Text("LOGOUT"),
               trailing: Icon(Icons.cancel),
               onTap: () {

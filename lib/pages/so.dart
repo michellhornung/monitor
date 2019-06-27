@@ -78,7 +78,7 @@ class _SOState extends State<SO> {
                             return new ListTile(
                               leading: Icon(
                                 Icons.room_service,
-                                color: Colors.grey,
+                                color: Colors.yellow,
                               ),
                               title: new Text(listData.toString()),
                               trailing: Icon(Icons.keyboard_arrow_right),
@@ -89,17 +89,6 @@ class _SOState extends State<SO> {
                                       builder: (context) => SODetails()),
                                 );
                               },
-//                              children: <Widget>[
-//                                Divider(color: Colors.black, indent: 8.8),
-//                                AnimatedContainer(
-//                                  child: Padding(
-//                                    padding: const EdgeInsets.all(16.8),
-//                                  ),
-//                                  curve: Curves.easeInOut,
-//                                  duration: const Duration(milliseconds: 500),
-//                                  height: 100.0,
-//                                ),
-//                              ],
                             );
                           },
                         )
@@ -111,7 +100,7 @@ class _SOState extends State<SO> {
                             return new ListTile(
                               leading: Icon(
                                 Icons.fiber_manual_record,
-                                color: Colors.grey,
+                                color: Colors.yellow,
                               ),
                               title: new Text(listData.toString()),
                               trailing: Icon(Icons.keyboard_arrow_right),
@@ -122,17 +111,6 @@ class _SOState extends State<SO> {
                                       builder: (context) => SODetails()),
                                 );
                               },
-//                              children: <Widget>[
-//                                Divider(color: Colors.black, indent: 8.8),
-//                                AnimatedContainer(
-//                                  child: Padding(
-//                                    padding: const EdgeInsets.all(16.8),
-//                                  ),
-//                                  curve: Curves.easeInOut,
-//                                  duration: const Duration(milliseconds: 500),
-//                                  height: 100.0,
-//                                ),
-//                              ],
                             );
                           },
                         ))

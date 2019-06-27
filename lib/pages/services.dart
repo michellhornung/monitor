@@ -88,7 +88,7 @@ class _ServicesState extends State<Services> {
                             return new ListTile(
                               leading: Icon(
                                 Icons.room_service,
-                                color: Colors.grey,
+                                color: Colors.red,
                               ),
                               title: new Text(listData.toString()),
                               trailing: Icon(Icons.keyboard_arrow_right),
@@ -99,17 +99,6 @@ class _ServicesState extends State<Services> {
                                       builder: (context) => ServiceDetails()),
                                 );
                               },
-//                              children: <Widget>[
-//                                Divider(color: Colors.black, indent: 8.8),
-//                                AnimatedContainer(
-//                                  child: Padding(
-//                                    padding: const EdgeInsets.all(16.8),
-//                                  ),
-//                                  curve: Curves.easeInOut,
-//                                  duration: const Duration(milliseconds: 500),
-//                                  height: 100.0,
-//                                ),
-//                              ],
                             );
                           },
                         )
@@ -121,7 +110,7 @@ class _ServicesState extends State<Services> {
                             return new ListTile(
                               leading: Icon(
                                 Icons.fiber_manual_record,
-                                color: Colors.grey,
+                                color: Colors.red,
                               ),
                               title: new Text(listData.toString()),
                               trailing: Icon(Icons.keyboard_arrow_right),
@@ -132,17 +121,6 @@ class _ServicesState extends State<Services> {
                                       builder: (context) => ServiceDetails()),
                                 );
                               },
-//                              children: <Widget>[
-//                                Divider(color: Colors.black, indent: 8.8),
-//                                AnimatedContainer(
-//                                  child: Padding(
-//                                    padding: const EdgeInsets.all(16.8),
-//                                  ),
-//                                  curve: Curves.easeInOut,
-//                                  duration: const Duration(milliseconds: 500),
-//                                  height: 100.0,
-//                                ),
-//                              ],
                             );
                           },
                         ))
