@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:monitor/pages/LHAliveMonitorInfo.dart';
 import 'package:monitor/pages/drilldown.dart';
 import 'package:monitor/pages/login.dart';
-import 'package:monitor/pages/dataTableDemo.dart';
-import 'package:monitor/widgets/dataTableWidgetDemo.dart';
 
 class Overview extends StatefulWidget {
   @override
@@ -11,14 +10,6 @@ class Overview extends StatefulWidget {
 
 class _OverviewState extends State<Overview> {
   final List<String> _listViewData = [
-    "LH TEC",
-    "DKVOX",
-    "RESLUT",
-    "XYZ",
-    "AIRBOT",
-    "IT4U",
-    "HAMMERCODE",
-    "DRIVEN",
     "LH TEC",
     "DKVOX",
     "RESLUT",
@@ -61,7 +52,7 @@ class _OverviewState extends State<Overview> {
               trailing: Icon(Icons.arrow_right),
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(
-                    builder: (BuildContext context) => DataTableDemo()));
+                    builder: (BuildContext context) => LHAliveMonitorInfo()));
               },
             ),
             ListTile(

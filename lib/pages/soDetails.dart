@@ -31,7 +31,7 @@ class _SODetailsState extends State<SODetails> {
                         borderRadius: BorderRadius.circular(10.0),
                       ),
                       child: Text(
-                        'alive $index',
+                        'dkvox $index',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 16.0,

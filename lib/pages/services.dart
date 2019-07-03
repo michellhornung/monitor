@@ -47,25 +47,25 @@ class _ServicesState extends State<Services> {
 
   void values() {
     _list = List();
-    _list.add("aliveserver01");
-    _list.add("aliveserver02");
-    _list.add("aliveserver03");
-    _list.add("aliveserver04");
-    _list.add("aliveserver05");
-    _list.add("aliveserver06");
-    _list.add("aliveserver07");
-    _list.add("aliveserver09");
-    _list.add("aliveserver10");
-    _list.add("aliveserver11");
-    _list.add("aliveserver12");
-    _list.add("aliveserver13");
-    _list.add("aliveserver14");
-    _list.add("aliveserver15");
-    _list.add("aliveserver16");
-    _list.add("aliveserver17");
-    _list.add("aliveserver18");
-    _list.add("aliveserver19");
-    _list.add("aliveserver20");
+    _list.add("dkvox01");
+    _list.add("dkvox02");
+    _list.add("dkvox03");
+    _list.add("dkvox04");
+    _list.add("dkvox05");
+    _list.add("dkvox06");
+    _list.add("dkvox07");
+    _list.add("dkvox09");
+    _list.add("dkvox10");
+    _list.add("dkvox11");
+    _list.add("dkvox12");
+    _list.add("dkvox13");
+    _list.add("dkvox14");
+    _list.add("dkvox15");
+    _list.add("dkvox16");
+    _list.add("dkvox17");
+    _list.add("dkvox18");
+    _list.add("dkvox19");
+    _list.add("dkvox20");
   }
 
   @override

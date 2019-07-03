@@ -47,15 +47,15 @@ class _SOState extends State<SO> {
 
   void values() {
     _list = List();
-    _list.add("aliveserver 1");
-    _list.add("aliveserver 2");
-    _list.add("aliveserver 3");
-    _list.add("aliveserver 4");
-    _list.add("aliveserver 5");
-    _list.add("aliveserver 6");
-    _list.add("aliveserver 7");
-    _list.add("aliveserver 9");
-    _list.add("aliveserver 10");
+    _list.add("dkvox 1");
+    _list.add("dkvox 2");
+    _list.add("dkvox 3");
+    _list.add("dkvox 4");
+    _list.add("dkvox 5");
+    _list.add("dkvox 6");
+    _list.add("dkvox 7");
+    _list.add("dkvox 9");
+    _list.add("dkvox 10");
   }
 
   @override
