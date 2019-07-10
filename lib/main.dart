@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'LH ALIVE MONITOR',
       theme: ThemeData(
-        primarySwatch: Colors.orange,
+        primarySwatch: Colors.red,
         hintColor: Colors.grey,
       ),
       home: Login(title: 'LH ALIVE MONITOR'),
