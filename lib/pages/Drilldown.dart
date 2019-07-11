@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:monitor/pages/services.dart';
 import 'package:monitor/pages/so.dart';
 import 'package:monitor/pages/oracle.dart';
 import 'package:monitor/pages/alarms.dart';
@@ -31,12 +30,7 @@ class BodyWidget extends StatelessWidget {
             title: Text('Serviços'),
             subtitle: Text('Erros encontrados em serviços.'),
             trailing: Icon(Icons.keyboard_arrow_right),
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => Services()),
-              );
-            },
+            onTap: () {},
           ),
         ),
         Padding(

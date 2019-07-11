@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:monitor/pages/overview.dart';
 
 class Login extends StatefulWidget {
   Login({Key key, this.title}) : super(key: key);
@@ -59,10 +58,7 @@ class _LoginState extends State<Login> {
           borderRadius: BorderRadius.circular(24),
         ),
         onPressed: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => Overview()),
-          );
+          Navigator.pushNamed(context, '/Overview');
         },
         padding: EdgeInsets.all(12),
         color: Colors.orange[800],

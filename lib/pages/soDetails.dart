@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:monitor/widgets/dataTableSODetails.dart';
 
 class SODetails extends StatefulWidget {
   @override
@@ -40,7 +39,7 @@ class _SODetailsState extends State<SODetails> {
                         ),
                       ),
                     ),
-                    child: DataTableSODetails(),
+                    //child: DataTableSODetails(),
                   ),
                 ),
                 color: Colors.grey[300],

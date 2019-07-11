@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:monitor/pages/login.dart';
+import 'package:monitor/pages/Login.dart';
+import 'package:monitor/pages/Overview.dart';
+import 'package:monitor/pages/LHAliveMonitorInfo.dart';
+import 'package:monitor/pages/Drilldown.dart';
 
 void main() => runApp(MyApp());
 
@@ -10,10 +13,16 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'LH ALIVE MONITOR',
       theme: ThemeData(
-        primarySwatch: Colors.red,
+        primarySwatch: Colors.orange,
         hintColor: Colors.grey,
       ),
-      home: Login(title: 'LH ALIVE MONITOR'),
+      routes: {
+        '/': (context) => Login(title: 'LH ALIVE MONITOR'),
+        '/Overview': (context) => Overview(),
+        '/LHAliveMonitorInfo': (context) => LHAliveMonitorInfo(),
+        '/Logout': (context) => Login(),
+        '/DrillDown': (context) => DrillDown(),
+      },
     );
   }
 }
