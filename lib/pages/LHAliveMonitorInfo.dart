@@ -36,22 +36,3 @@ class BodyWidget extends StatelessWidget {
     );
   }
 }
-
-//
-//return Center(
-//child: Row(
-//mainAxisAlignment: MainAxisAlignment.center,
-//children: <Widget>[
-//Image.asset(
-//'images/logo-monitor-02.png',
-//width: 280,
-//height: 300,
-//),
-//Row(
-//mainAxisAlignment: MainAxisAlignment.center,
-//children: <Widget>[
-//Text('LH Alive Monitor versão 1.0.007 ® '),
-//],
-//)
-//],
-//));
