@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class ChannelDetails extends StatelessWidget {
+class MonitorDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('DETALHES CANAIS'),
+        title: Text('DETALHES MONITOR'),
       ),
       body: BodyWidget(),
     );

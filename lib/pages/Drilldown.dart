@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:monitor/pages/so.dart';
-import 'package:monitor/pages/oracle.dart';
-import 'package:monitor/pages/alarms.dart';
 
 class DrillDown extends StatelessWidget {
   @override
@@ -24,30 +21,13 @@ class BodyWidget extends StatelessWidget {
           padding: const EdgeInsets.all(16.0),
           child: ListTile(
             leading: Icon(
-              Icons.fiber_manual_record,
-              color: Colors.red,
+              Icons.data_usage,
+              color: Colors.blueGrey,
             ),
-            title: Text('Serviços'),
-            subtitle: Text('Erros encontrados em serviços.'),
-            trailing: Icon(Icons.keyboard_arrow_right),
-            onTap: () {},
-          ),
-        ),
-        Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: ListTile(
-            leading: Icon(
-              Icons.fiber_manual_record,
-              color: Colors.yellow,
-            ),
-            title: Text('Sistema Operacional'),
-            subtitle: Text('Warnings encontrados em SO.'),
+            title: Text('Banco de dados'),
             trailing: Icon(Icons.keyboard_arrow_right),
             onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => SO()),
-              );
+              Navigator.pushNamed(context, '/Database');
             },
           ),
         ),
@@ -55,74 +35,64 @@ class BodyWidget extends StatelessWidget {
           padding: const EdgeInsets.all(16.0),
           child: ListTile(
             leading: Icon(
-              Icons.fiber_manual_record,
-              color: Colors.green,
-            ),
-            title: Text('Oracle'),
-            subtitle: Text('Tudo certo por aqui!'),
-            trailing: Icon(Icons.keyboard_arrow_right),
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => Oracle()),
-              );
-            },
-          ),
-        ),
-        Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: ListTile(
-            leading: Icon(
-              Icons.fiber_manual_record,
-              color: Colors.red,
+              Icons.warning,
+              color: Colors.blueGrey,
             ),
             title: Text('Alarmes'),
-            subtitle: Text('Tudo certo por aqui!'),
             trailing: Icon(Icons.keyboard_arrow_right),
             onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => Alarms()),
-              );
+              Navigator.pushNamed(context, '/Alarms');
             },
           ),
         ),
-//        Padding(
-//          padding: const EdgeInsets.all(16.0),
-//          child: ListTile(
-//            leading: Icon(
-//              Icons.fiber_manual_record,
-//              color: Colors.grey,
-//            ),
-//            title: Text('Discador'),
-//            subtitle: Text('Clique para verficar'),
-//            trailing: Icon(Icons.keyboard_arrow_right),
-//            onTap: () {
-//              Navigator.push(
-//                context,
-//                MaterialPageRoute(builder: (context) => DrillDown()),
-//              );
-//            },
-//          ),
-//        ),
-//        Padding(
-//          padding: const EdgeInsets.all(16.0),
-//          child: ListTile(
-//            leading: Icon(
-//              Icons.fiber_manual_record,
-//              color: Colors.grey,
-//            ),
-//            title: Text('Call Center'),
-//            subtitle: Text('Clique para verficar'),
-//            trailing: Icon(Icons.keyboard_arrow_right),
-//            onTap: () {
-//              Navigator.push(
-//                context,
-//                MaterialPageRoute(builder: (context) => DrillDown()),
-//              );
-//            },
-//          ),
-//        ),
+        Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: ListTile(
+            leading: Icon(
+              Icons.computer,
+              color: Colors.blueGrey,
+            ),
+            title: Text('Monitor'),
+            trailing: Icon(Icons.keyboard_arrow_right),
+            onTap: () {
+              Navigator.pushNamed(context, '/MonitorDetails');
+            },
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: ListTile(
+            leading: Icon(
+              Icons.disc_full,
+              color: Colors.red,
+            ),
+            title: Text(
+              'Hardware-01',
+              style: TextStyle(color: Colors.red),
+            ),
+            trailing: Icon(
+              Icons.keyboard_arrow_right,
+              color: Colors.red,
+            ),
+            onTap: () {
+              Navigator.pushNamed(context, '/Hardwares');
+            },
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: ListTile(
+            leading: Icon(
+              Icons.disc_full,
+              color: Colors.blueGrey,
+            ),
+            title: Text('Hardware-02'),
+            trailing: Icon(Icons.keyboard_arrow_right),
+            onTap: () {
+              Navigator.pushNamed(context, '/Hardwares');
+            },
+          ),
+        ),
       ],
     );
   }

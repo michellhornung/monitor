@@ -1,16 +1,19 @@
 import 'package:flutter/material.dart';
 
-class Oracle extends StatefulWidget {
+const dataBaseVersion =
+    'Oracle Database 18c Express Edition Release 18.0.0.0.0 - Production';
+
+class Database extends StatefulWidget {
   @override
-  _OracleState createState() => _OracleState();
+  _DatabaseState createState() => _DatabaseState();
 }
 
-class _OracleState extends State<Oracle> {
+class _DatabaseState extends State<Database> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('ORACLE'),
+        title: Text('BANCO DE DADOS'),
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -317,20 +320,20 @@ class _OracleState extends State<Oracle> {
                       children: <Widget>[
                         Icon(
                           Icons.supervised_user_circle,
-                          color: Colors.black,
+                          color: Colors.white,
                           size: 28.0,
                         ),
                         Text(
                           'USERS',
                           style: new TextStyle(
                             fontSize: 20.0,
-                            color: Colors.black,
+                            color: Colors.white,
                           ),
                         ),
                         Text(
                           '0,292 GB',
                           style: new TextStyle(
-                              fontSize: 12.0, color: Colors.black),
+                              fontSize: 12.0, color: Colors.white),
                         ),
                       ],
                     ),
@@ -348,20 +351,20 @@ class _OracleState extends State<Oracle> {
                       children: <Widget>[
                         Icon(
                           Icons.done_all,
-                          color: Colors.black,
+                          color: Colors.white,
                           size: 28.0,
                         ),
                         Text(
                           'TOTAL',
                           style: new TextStyle(
                             fontSize: 20.0,
-                            color: Colors.black,
+                            color: Colors.white,
                           ),
                         ),
                         Text(
                           '0,292 GB',
                           style: new TextStyle(
-                              fontSize: 12.0, color: Colors.black),
+                              fontSize: 12.0, color: Colors.white),
                         ),
                       ],
                     ),
@@ -371,6 +374,17 @@ class _OracleState extends State<Oracle> {
                       color: Colors.blue[800],
                       shape: BoxShape.rectangle,
                     ),
+                  ),
+                ],
+              ),
+              SizedBox(height: 10.0),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Text(
+                    dataBaseVersion,
+                    textAlign: TextAlign.center,
                   ),
                 ],
               ),

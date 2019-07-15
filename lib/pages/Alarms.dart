@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:monitor/pages/soDetails.dart';
+import 'package:monitor/pages/AlarmDetail.dart';
 
-class SO extends StatefulWidget {
+class Alarms extends StatefulWidget {
   @override
-  _SOState createState() => new _SOState();
+  _AlarmsState createState() => new _AlarmsState();
 }
 
-class _SOState extends State<SO> {
+class _AlarmsState extends State<Alarms> {
   Widget appBarTitle = new Text(
-    "SISTEMA OPERACIONAL",
+    "ALARMES",
     style: new TextStyle(color: Colors.black),
   );
   Icon icon = new Icon(
@@ -22,7 +22,7 @@ class _SOState extends State<SO> {
   String _searchText = "";
   List searchresult = new List();
 
-  _SOState() {
+  _AlarmsState() {
     _controller.addListener(() {
       if (_controller.text.isEmpty) {
         setState(() {
@@ -47,15 +47,14 @@ class _SOState extends State<SO> {
 
   void values() {
     _list = List();
-    _list.add("dkvox 1");
-    _list.add("dkvox 2");
-    _list.add("dkvox 3");
-    _list.add("dkvox 4");
-    _list.add("dkvox 5");
-    _list.add("dkvox 6");
-    _list.add("dkvox 7");
-    _list.add("dkvox 9");
-    _list.add("dkvox 10");
+    _list.add("ERROR: DSC - 29/04/2019 02:13:45");
+    _list.add("WARN: DSC - 29/04/2019 02:13:45");
+    _list.add("ERROR: DSC - 29/04/2019 02:13:45");
+    _list.add("WARN: DSC - 29/04/2019 02:13:45");
+    _list.add("ERROR: DSC - 29/04/2019 02:13:45");
+    _list.add("WARN: DSC - 29/04/2019 02:13:45");
+    _list.add("ERROR: DSC - 29/04/2019 02:13:45");
+    _list.add("WARN: DSC - 29/04/2019 02:13:45");
   }
 
   @override
@@ -77,8 +76,8 @@ class _SOState extends State<SO> {
                             String listData = searchresult[index];
                             return new ListTile(
                               leading: Icon(
-                                Icons.room_service,
-                                color: Colors.yellow,
+                                Icons.error,
+                                color: Colors.red,
                               ),
                               title: new Text(listData.toString()),
                               trailing: Icon(Icons.keyboard_arrow_right),
@@ -86,7 +85,7 @@ class _SOState extends State<SO> {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => SODetails()),
+                                      builder: (context) => AlarmDetail()),
                                 );
                               },
                             );
@@ -99,8 +98,8 @@ class _SOState extends State<SO> {
                             String listData = _list[index];
                             return new ListTile(
                               leading: Icon(
-                                Icons.fiber_manual_record,
-                                color: Colors.yellow,
+                                Icons.error,
+                                color: Colors.red,
                               ),
                               title: new Text(listData.toString()),
                               trailing: Icon(Icons.keyboard_arrow_right),
@@ -108,7 +107,7 @@ class _SOState extends State<SO> {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => SODetails()),
+                                      builder: (context) => AlarmDetail()),
                                 );
                               },
                             );
@@ -164,7 +163,7 @@ class _SOState extends State<SO> {
         color: Colors.black,
       );
       this.appBarTitle = new Text(
-        "Detalhes Serviços",
+        "ALARMES",
         style: new TextStyle(color: Colors.black),
       );
       _isSearching = false;

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:monitor/pages/channelDetail.dart';
+import 'package:monitor/pages/MonitorDetails.dart';
 
 class AlarmDrillDownDetails extends StatelessWidget {
   @override
@@ -142,7 +142,7 @@ class BodyWidget extends StatelessWidget {
                               onPressed: () {
                                 Navigator.of(context).push(MaterialPageRoute(
                                     builder: (BuildContext context) =>
-                                        ChannelDetails()));
+                                        MonitorDetails()));
                               },
                               child: Container(
                                 margin: EdgeInsets.symmetric(horizontal: 2),
