@@ -13,11 +13,28 @@ final List<Customer> customers = [
       customerName: 'DKVOX'),
   Customer(
       colour: goodCardColor,
-      icon: FontAwesomeIcons.check,
+      icon: FontAwesomeIcons.accusoft,
       customerName: 'RESLUT'),
+  Customer(
+      colour: goodCardColor,
+      icon: FontAwesomeIcons.acquisitionsIncorporated,
+      customerName: 'XYZ'),
+  Customer(
+      colour: goodCardColor,
+      icon: FontAwesomeIcons.infinity,
+      customerName: 'AIRBOT'),
+  Customer(
+      colour: goodCardColor,
+      icon: FontAwesomeIcons.apple,
+      customerName: 'APPLE'),
+  Customer(
+    colour: goodCardColor,
+    icon: FontAwesomeIcons.handHolding,
+    customerName: 'IT4U',
+  ),
   Customer(
     colour: goodCardColor,
     icon: FontAwesomeIcons.car,
-    customerName: 'IT4U',
+    customerName: 'DRIVEN',
   ),
 ];
