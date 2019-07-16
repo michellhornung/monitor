@@ -75,7 +75,7 @@ class BodyWidget extends StatelessWidget {
               color: Colors.red,
             ),
             onTap: () {
-              Navigator.pushNamed(context, '/Hardwares');
+              Navigator.pushNamed(context, '/Hardware');
             },
           ),
         ),
@@ -89,7 +89,7 @@ class BodyWidget extends StatelessWidget {
             title: Text('Hardware-02'),
             trailing: Icon(Icons.keyboard_arrow_right),
             onTap: () {
-              Navigator.pushNamed(context, '/Hardwares');
+              Navigator.pushNamed(context, '/Hardware');
             },
           ),
         ),

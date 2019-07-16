@@ -6,7 +6,7 @@ import 'package:monitor/pages/Drilldown.dart';
 import 'package:monitor/pages/DataBase.dart';
 import 'package:monitor/pages/Alarms.dart';
 import 'package:monitor/pages/MonitorDetails.dart';
-import 'package:monitor/pages/Hardwares.dart';
+import 'package:monitor/pages/Hardware.dart';
 
 void main() => runApp(MyApp());
 
@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
         '/Database': (context) => Database(),
         '/Alarms': (context) => Alarms(),
         '/MonitorDetails': (context) => MonitorDetails(),
-        '/Hardwares': (context) => Hardwares(),
+        '/Hardware': (context) => Hardware(),
       },
     );
   }
