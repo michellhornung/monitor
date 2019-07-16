@@ -9,11 +9,11 @@ class Alarms extends StatefulWidget {
 class _AlarmsState extends State<Alarms> {
   Widget appBarTitle = new Text(
     "ALARMES",
-    style: new TextStyle(color: Colors.black),
+    style: new TextStyle(color: Colors.white),
   );
   Icon icon = new Icon(
     Icons.search,
-    color: Colors.black,
+    color: Colors.white,
   );
   final globalKey = new GlobalKey<ScaffoldState>();
   final TextEditingController _controller = new TextEditingController();
@@ -127,17 +127,17 @@ class _AlarmsState extends State<Alarms> {
             if (this.icon.icon == Icons.search) {
               this.icon = new Icon(
                 Icons.close,
-                color: Colors.black,
+                color: Colors.white,
               );
               this.appBarTitle = new TextField(
                 controller: _controller,
                 style: new TextStyle(
-                  color: Colors.black,
+                  color: Colors.white,
                 ),
                 decoration: new InputDecoration(
-                    prefixIcon: new Icon(Icons.search, color: Colors.black),
+                    prefixIcon: new Icon(Icons.search, color: Colors.white),
                     hintText: "Search...",
-                    hintStyle: new TextStyle(color: Colors.black)),
+                    hintStyle: new TextStyle(color: Colors.white)),
                 onChanged: searchOperation,
               );
               _handleSearchStart();
@@ -160,11 +160,11 @@ class _AlarmsState extends State<Alarms> {
     setState(() {
       this.icon = new Icon(
         Icons.search,
-        color: Colors.black,
+        color: Colors.white,
       );
       this.appBarTitle = new Text(
         "ALARMES",
-        style: new TextStyle(color: Colors.black),
+        style: new TextStyle(color: Colors.white),
       );
       _isSearching = false;
       _controller.clear();
