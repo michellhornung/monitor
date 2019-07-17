@@ -13,4 +13,19 @@ final List<SO> so = [
       colour: uncolored,
       title: 'Tasks',
       value: '272 total 1 running'),
+  SO(
+      icon: FontAwesomeIcons.desktop,
+      colour: uncolored,
+      title: 'Cpu',
+      value: '0.8%us'),
+  SO(
+      icon: FontAwesomeIcons.stackOverflow,
+      colour: uncolored,
+      title: 'Top',
+      value: '1645972k total'),
+  SO(
+      icon: FontAwesomeIcons.pills,
+      colour: uncolored,
+      title: 'Swap',
+      value: '7340028k total'),
 ];

@@ -16,9 +16,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'LH ALIVE MONITOR',
-      theme: ThemeData(
-        primarySwatch: Colors.blueGrey,
-        hintColor: Colors.orange,
+      theme: ThemeData.light().copyWith(
+        primaryColor: Color(0xFFF58033),
+        //scaffoldBackgroundColor: Color(0xFFF7F7F7),
       ),
       routes: {
         '/': (context) => Login(title: 'LH ALIVE MONITOR'),
