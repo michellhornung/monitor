@@ -8,7 +8,7 @@ class SO extends StatelessWidget {
     return Scaffold(
       body: GridView.count(
           crossAxisCount: 2,
-          padding: EdgeInsets.all(6.0),
+          padding: EdgeInsets.all(18.0),
           children: List.generate(so.length, (index) {
             return Center(
               child: SOCard(so: so[index]),
